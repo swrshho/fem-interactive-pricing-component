@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+    <!--  flex ==> display: flex;
+          jc-sb ==> justify-content: center;
+          ai-c ==> align-items: center; -->
+   
+     
+  
+  <main class="flex flex flex-d-v ai-c">
+
+    <header class="flex flex flex-d-v ai-c">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </header>
+
+    <div class="pricing-component flex flex-d-v ai-c">
+
+      <div class="price-slider flex flex-d-v ai-c">
+        <p class = "slider-text" id="k/m"><span id="value">10k</span>pageview</p>
+        <input type="range" name="pageviews" class="slider" id="pageviews"  value="10"  min="10" max="1000" step="10">
+        <p class="flex ai-c price-tag"><span class="price" id="price">$8.00</span>/ month</p>
+      </div>
+  
+      <div class="price-checkbox flex ai-c">
+        <span>Monthly Billing</span>
+        <input type="checkbox" class="checkbox" name="m/y-toggle" id="m/y-toggle">
+        <span>Yearly Billing</span>
+        <span class="discount">-25%</span>
+      </div>
+      
+      <div class="section-separator"></div>
+
+      <div class="benefits flex flex-d-v ai-c">
+        <div class="benefits-text">
+          <p class="flex ai-c"><span class="check"></span>Unlimited websites</p>
+          <p class="flex ai-c"><span class="check"></span>100% data ownership</p>
+          <p class="flex ai-c"><span class="check"></span>Email reports</p>
+        </div>
+        
+        <a href="" class="cta">Start my trial</a>
+      </div>
+      
+    </div>
+
+    
+  </main>
+
+  <script src="./app/script.js"></script>
+</body>
+</html>
